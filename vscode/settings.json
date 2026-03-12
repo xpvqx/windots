@@ -1,9 +1,0 @@
-{
-    "editor.fontSize": 16,
-    "editor.fontFamily": "JetBrainsMono NF, JetBrains Mono NF, JetBrains Mono Nerd Font, JetBrains Mono, Consolas, 'Courier New', monospace",
-    "workbench.secondarySideBar.defaultVisibility": "hidden",
-    "workbench.colorTheme": "Gruvbox Dark Hard",
-    "security.workspace.trust.untrustedFiles": "open",
-    "chat.agent.enabled": false,
-    "update.showReleaseNotes": false
-}
