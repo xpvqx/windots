@@ -203,8 +203,8 @@ require("lazy").setup({
           header = ascii.sharp,
           shortcut = {
             { key = "f", desc = "󰈞  Find File", action = "Telescope find_files" },
-            { key = "p", desc = "  Projects", action = "Telescope projects" },
-            { key = "d", desc = "  Dotfiles", action = "Telescope dotfiles" },
+            -- { key = "p", desc = "  Projects", action = "Telescope projects" },
+            -- { key = "d", desc = "  Dotfiles", action = "Telescope dotfiles" },
             { key = "q", desc = "  Quit", action = "qa" },
           },
           project = { enable = true, limit = 8 },
