@@ -86,7 +86,7 @@ require("lazy").setup({
         },
         inverse = true,
         contrast = "hard",
-        transparent_mode = true,
+        transparent_mode = false,
       })
       vim.cmd("colorscheme gruvbox")
     end,
