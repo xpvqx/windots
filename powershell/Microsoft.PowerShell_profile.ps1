@@ -8,7 +8,8 @@ $EDITOR = 'nvim'
 # install with: "Install-Module Terminal-Icons -Repository PSGallery -Scope CurrentUser"
 Import-Module Terminal-Icons
 
-# alias
+# aliases
+Set-Alias ep Edit-Profile
 Set-Alias vim nvim
 Set-Alias c clear
 Set-Alias ll Get-ChildItem
@@ -18,9 +19,20 @@ Set-Alias cat Get-Content
 Set-Alias touch New-Item
 Set-Alias rm Remove-Item
 
-# shortcut for editing profile
 function Edit-Profile { nvim $PROFILE }
-Set-Alias ep Edit-Profile
+
+# git
+function ga {
+  git add .
+}
+
+function gc {
+  git commit -m
+}
+
+function gp {
+  git push origin main
+}
 
 # navigation
 function nc {
@@ -29,6 +41,10 @@ function nc {
 
 function hv {
     Set-Location "$HOME\nextcloud\hv"
+}
+
+function personal {
+    Set-Location "$HOME\nextcloud\personal"
 }
 
 function nit {
@@ -43,13 +59,17 @@ function dots {
     Set-Location "$HOME\Documents\git\windots"
 }
 
-function docs {
-    $docs = if(([Environment]::GetFolderPath("MyDocuments"))) {([Environment]::GetFolderPath("MyDocuments"))} else {$HOME + "\Documents"}
-    Set-Location -Path $docs
-}
-
 function gg {
     Set-Location "$HOME\Documents\git"
+}
+
+function docs {
+    Set-Location "$HOME\nextcloud\personal\documents"
+}
+
+function docs2 {
+    $docs = if(([Environment]::GetFolderPath("MyDocuments"))) {([Environment]::GetFolderPath("MyDocuments"))} else {$HOME + "\Documents"}
+    Set-Location -Path $docs
 }
 
 # sys and utils
