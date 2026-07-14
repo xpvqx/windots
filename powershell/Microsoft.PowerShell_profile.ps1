@@ -23,6 +23,10 @@ function Edit-Profile { nvim $PROFILE }
 Set-Alias ep Edit-Profile
 
 # navigation
+function nc {
+    Set-Location "$HOME\nextcloud"
+}
+
 function hv {
     Set-Location "$HOME\nextcloud\hv"
 }
@@ -44,6 +48,9 @@ function docs {
     Set-Location -Path $docs
 }
 
+function gg {
+    Set-Location "$HOME\Documents\git"
+}
 
 # sys and utils
 function winutil {
