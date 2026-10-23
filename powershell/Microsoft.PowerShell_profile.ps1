@@ -59,7 +59,7 @@ function dots {
     Set-Location "$HOME\Documents\git\windots"
 }
 
-function gg {
+function gits {
     Set-Location "$HOME\Documents\git"
 }
 
